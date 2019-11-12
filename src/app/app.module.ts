@@ -8,17 +8,23 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import{PostCeateComponent} from './posts/post-create/post-create.component';
 import{HeaderComponent} from './header/header.component';
+import{PostListComponent} from './posts/post-list/post-list.component';
 
 import {MatInputModule} from '@angular/material/input';
 import{MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatExpansionModule} from '@angular/material/expansion';
+
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     PostCeateComponent,
-    HeaderComponent
+    HeaderComponent,
+    PostListComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -27,7 +33,9 @@ import {MatButtonModule} from '@angular/material/button';
     FormsModule,
     MatInputModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatToolbarModule,
+    MatExpansionModule
     
     
   ],
